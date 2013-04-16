@@ -1,0 +1,436 @@
+		
+		
+	body {
+		position: relative;
+		margin:0 auto;
+		width: 1020px;
+		//max-width: 1070px;
+		//max-height: 675px;
+		
+		//min-height: 500px;
+		//min-width: 500px;
+   
+        background: #333;
+		//left: 250px;
+		color: #fff;
+		
+		font-family: "Verdana";
+		font-size: 11px;
+
+      }
+	  .pagecontainer {
+		position: relative;
+		margin:0 auto;
+		width: 1020px;
+		//height: 675px;
+		//background: #335;
+		//max-width: 1020px;
+		//max-height: 675px;
+		
+		//min-width: 500px;
+		//min-height: 500px;
+       // margin: 0px;
+      
+
+      }
+	  .dazlogo
+	  {
+	 // width: 50%;
+	  //height: 150px;
+	  ///position: absolute;
+	  //top: 0px; 
+	  margin:0 auto;
+	  text-align: center;
+
+       // left: 150px;
+		z-index: -1;
+	  }
+	  
+	   #video-bg, video {
+		
+		position: absolute;
+
+
+        width: 640px;
+        height: 480px
+      }
+	  video {
+        position: absolute;
+        top: 120px; 
+        left: 190px;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+		
+      }
+	  
+	  #bar
+				{
+				left: 270px;
+				top: 385px;
+				position:relative;
+				}
+	  
+	  #progressBar { 
+			position: absolute;
+			 top: 110px;
+			 left:35px;
+			border:1px solid #aaa; 
+				color:#fff; 
+				width:400px; 
+				height:20px;
+				z-index: 100;
+
+			}
+			#progress {
+				background-color: #ff6600;
+				height:20px;
+				display:inline-block;
+
+			}
+			
+			
+				
+		#controls
+				{
+				left: 280px;
+				top: 525px;
+				//top:445px;
+				position:relative;
+				font-size: 14px;
+				}
+				
+		
+		.alert
+				  {
+					position: absolute;
+					top: 78px; 
+					text-align:center;
+					left: 398px;
+					z-index: 5000;
+					width: 200px;
+					height:20px;
+					-moz-border-radius: 0px;
+					-webkit-border-radius: 0px;
+					opacity: 0;
+					filter:	alpha(opacity=50);
+					font:14px/1 'Segoe UI',Arial,sans-serif;	
+				  }
+				  
+		.alerton
+				  {
+					position: absolute;
+					top: 78px; 
+					text-align:center;
+					left: 398px;
+					//z-index: 5000;
+					//width: 200px;
+					//height:20px;
+					//-moz-border-radius: 0px;
+					//-webkit-border-radius: 0px;
+					//opacity: 0.5;
+					//filter:	alpha(opacity=50);
+					//font:14px/1 'Segoe UI',Arial,sans-serif;	
+				  }
+				
+		div.activeZone
+				{
+					width:0px;
+					height:0px;
+					left: 0px;
+					top: 280px;
+					background:#ff6600;
+					position:absolute;
+					border-radius: 50px;
+					-moz-border-radius: 50px;
+					-webkit-border-radius: 50px;
+					opacity: 100;
+					color:black;
+					//border: 1px solid black;
+					filter:	alpha(opacity=50);
+					cursor: pointer;
+					z-index: 20000;
+					//visibility:hidden;
+				}
+			
+			
+	  button {
+
+        margin: px 0px 5px 20px;
+        border:  0;
+        padding: 0px 15px;
+        color: #fff;
+        text-decoration: none;
+		font-family: "Verdana";
+        font-size: 15px;
+        line-height: 25px;
+        background: #333366;
+        border-radius: 12px;
+        -webkit-border-radius: 5px;
+        text-shadow: #ccc 0px 1px 1px;
+        box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+        -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+        -moz-box-shadow: 0px 0px 30px rgba(0,0,0,.5);
+       /* background: -webkit-gradient(linear, left top, left bottom, from(#ff6600), to(#cc3300));
+        background: -moz-linear-gradient(top,  #ff6600,  #cc3300);*/
+		background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#333));
+        background: -moz-linear-gradient(top,  #333,  #333);
+		cursor: pointer;
+      }
+	  
+	  #playerstackleft{
+				
+				left: 10px;
+				top: 5px;
+				font-size: 13px;
+				padding-left: 0px;
+				margin: 10px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playerrayban{
+				font-size: 13px;
+				left: -5px;
+				top: 120px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playerwall{
+				font-size: 13px;
+				left: -5px;
+				top: 230px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playerwooden{
+				font-size: 13px;
+				left: -5px;
+				top: 340px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playertwo{
+				font-size: 13px;
+				left: -5px;
+				top: 450px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playersticker{
+				font-size: 13px;
+				left: 810px;
+				top: 5px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playercommission{
+				font-size: 13px;
+				left: 810px;
+				top: 120px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playersunglitters{
+				font-size: 13px;
+				left: 810px;
+				top: 230px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playerpainting{
+				font-size: 13px;
+				left: 810px;
+				top: 340px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+				
+				#playerghost{
+				font-size: 13px;
+				left: 810px;
+				top: 450px;
+				padding-left: 0px;
+				margin: 30px;
+				text-align: center;
+				width: 150px;
+				position: absolute;
+				opacity: 10;
+				height: 100px;
+				background: #666;
+				z-index: 0;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px
+				border-bottom-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				}
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+
+				
+				
+			
+		
+				

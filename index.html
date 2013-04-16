@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<title>Breton 0.0.8</title>
+			
+		<link rel="stylesheet" href="css/bretoncss.css">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+		
+	</head>
+	<body>
+
+	<div class = "pagecontainer">
+		
+		<div class="dazlogo">
+			<a target="_blank" href="www.fernandoCabello.html">
+			<img src="breton_logo.png" alt="Breton Logo">
+			</a>
+			</div>
+			
+			<div class = "alert"><p>@ Hotspot hide in stage @</p></div>
+			
+			<!--<div class = "alerton"><p>@ Hotspot hide in stage @</p></div>-->
+
+			
+			
+
+			
+		
+		 
+		<!--<div class="play">Play</div>
+		<div class="pause">Stop</div>-->
+		<video id="video" controls>
+			<source src="video/home.webm" type="video/vp8">
+			<source src="video/home.mp4" type="video/mp4" /> 
+             <source src="video/home.ogv" type="video/ogg" /> 
+			<!--<source src="http://www.youtube.com/watch?v=t_tFjQIC63Q" type="video/webm">-->
+			
+			
+			
+			
+		</video>
+		<div id="redcircle"></div>
+		<div id="yellowcircle"></div>
+		<div id="wall"></div>
+		<div id="wooden"></div>
+		<div id="numbertwo"></div>
+		<div id="stickers"></div>
+		<div id="comission"></div>
+		<div id="sunglitters"></div>
+		<div id="painting"></div>
+		<div id="ghost"></div>
+		
+			<div id="bar">
+		
+			<div id="progressBar"><span id="progress"></span></div>
+			</div>
+			
+			<div id="controls">
+			
+			<button id="playpause" title="Play" onclick="togglePlayPause()">Play</button>
+			<!--<button id = "pausevideo">Pause</button>
+			<button id="visibility" title="visual" onclick="toggleVisual()">Visibility</button>
+			<p><span class="click-opacity">Visibility</span></p>-->
+			
+			<button class="click-opacity">Visibility</button>
+			
+			
+			<button class="click-reload">Reload</button>
+			<!--<input id="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()" /> 
+			<button id="mute" onclick="toggleMute()">Mute</button>-->	
+			<button id= "instructionsButton">Instructions</button>
+			</div>
+			
+			
+			<div id = "playerstackleft">
+			<p>Link to Website.</p>
+			<button id = "littleplayer">Intro</button>			
+			</div>
+			
+			
+			<div id = "playerrayban">
+			<p>Track Name: Confessor</p>
+			<button id = "raybanbeginning">Beginning</button>
+			<button id = "raybanlittleplayer">Player</button>
+			<button id = "raybanlittlestop">Pause</button>
+			</div>
+			
+			<div id = "playerwall">
+			<p>Track Name: Governing</p>
+			<button id = "wallbeginning">Beginning</button>
+			<button id = "walllittleplayer">Player</button>
+			<button id = "walllittlestop">Pause</button>
+	
+			</div>
+			
+			<div id = "playerwooden">
+			<p>Track Name: Plastic</p>
+			<button id = "woodenbeginning">Beginning</button>
+			<button id = "woodenlittleplayer">Player</button>
+			<button id = "woodenlittlestop">Pause</button>
+
+			</div>
+			
+			<div id = "playertwo">
+			<p>Track Name: 2 Years</p>
+			<button id = "twobeginning">Beginning</button>
+			<button id = "twoplayer">Player</button>
+			<button id = "twostop">Pause</button>
+
+			</div>
+			
+			<div id = "playersticker">
+			<p>Track Name: Away</p>
+			<button id = "stickerbeginning">Beginning</button>
+			<button id = "stickerplayer">Player</button>
+			<button id = "stickerstop">Pause</button>
+
+			</div>
+			
+			<div id = "playercommission">
+			<p>Track Name: The Commission</p>
+			<button id = "commissionbeginning">Beginning</button>
+			<button id = "commissionplayer">Player</button>
+			<button id = "commissionstop">Pause</button>
+
+			</div>
+			
+			<div id = "playersunglitters">
+			<p>Track Name: Electrician</p>
+			<button id = "sunglittersbeginning">Beginning</button>
+			<button id = "sunglittersplayer">Player</button>
+			<button id = "sunglittersstop">Stop</button>
+
+			</div>
+			
+			<div id = "playerpainting">
+			<p>Track Name: Population</p>
+			<button id = "paintingbeginning">Beginning</button>
+			<button id = "paintingplayer">Player</button>
+			<button id = "paintingstop">Pause</button>
+
+			</div>
+			
+			<div id = "playerghost">
+			<p>Track Name: Ghost</p>
+			<button id = "ghostbeginning">Beginning</button>
+			<button id = "ghostplayer">Player</button>
+			<button id = "ghoststop">Pause</button>
+
+			</div>
+
+			
+			
+
+		</div>
+		</div>
+		</div>
+		
+	
+	<script src="js/jquery.pulse.js"></script>
+	<script src='js/mainbreton.js'></script>
+	<script src='js/instructions.js'></script>
+
+	<script src='js/clickfunction.js'></script>
+	<script src='js/audiobreton.js'></script>
+	<script src='js/players_stack.js'></script>
+	<script src='js/mainplayer.js'></script>
+	<script src='js/animations.js'></script>
+
+
+
+	
+	
+	
+
+		<!-- Custom Controls -->
+		<script>
+			
+
+		</script>
+	</body>
+</html>
